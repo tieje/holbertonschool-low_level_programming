@@ -31,6 +31,7 @@ int main(void)
 	{
 		if (n == 0)
 		{
+			strcpy(lgt, "");
 			strcpy(zero, " and is 0");
 		}
 		else
