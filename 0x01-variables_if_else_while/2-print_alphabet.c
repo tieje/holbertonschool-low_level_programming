@@ -5,11 +5,13 @@
 
 #include <stdio.h>
 
-int main () {
-   char ch;
+int main(void)
+{
+	char ch;
 
-   for(ch = 'a' ; ch <= 'z' ; ch++) {
-      putchar(ch);
-   }
-   return(0);
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+	{
+		putchar(ch);
+	}
+	return (0);
 }
