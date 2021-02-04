@@ -5,9 +5,9 @@
 #include <string.h>
 /* betty style doc for function maigoes there */
 /**
-* main - someting
-* Return: 0
-*/
+ * main - someting
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
