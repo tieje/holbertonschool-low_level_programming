@@ -21,7 +21,7 @@ int main(void)
 	last_digit = n % 10;
 	if (last_digit > 5)
 	{
-		strcpy(lgt, " and greater than 5");
+		strcpy(lgt, " and is greater than 5");
 	}
 	else if (last_digit == 0)
 	{
@@ -29,7 +29,7 @@ int main(void)
 	}
 	else
 	{
-		strcpy(lgt, " and less than 6 and not 0");
+		strcpy(lgt, " and is less than 6 and not 0");
 	}
 	printf("Last digit of %d is %d%s\n", n, last_digit, lgt);
 	return (0);
