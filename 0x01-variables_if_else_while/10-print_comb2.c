@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	int x = '0';
-	int y = '0';
+	int x;
+	int y;
 
-	while (x <= '9')
+	for (x = '0'; x <= '9'; x++)
 	{
-		while (y <= '9')
+		for (y = '0'; y <= '9'; y++)
 		{
 			putchar(x);
 			putchar(y);
@@ -23,9 +23,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			y++;
 		}
-		x++;
 	}
 	putchar(10);
 	return (0);
