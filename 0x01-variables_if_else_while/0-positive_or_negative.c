@@ -26,6 +26,6 @@ int main(void)
 	{
 		strcpy(inttype, "negative");
 	}
-	printf("%d is %s", n, inttype);
+	printf("%d is %s\n", n, inttype);
 	return (0);
 }
