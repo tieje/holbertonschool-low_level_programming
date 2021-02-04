@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	int x = 0;
-	int y = 0;
+	int x = '0';
+	int y = '0';
 
 	while (x <= '9')
 	{
