@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - betty don't kill me
- * Return: 0
+ * print_alphabet - betty don't kill me
+ * Return: void
  */
 
 void print_alphabet(void)
@@ -14,5 +14,4 @@ void print_alphabet(void)
 		_putchar(x);
 	}
 	_putchar(10);
-	return (0);
 }
