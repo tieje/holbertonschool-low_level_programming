@@ -7,7 +7,7 @@
 int main(void)
 {
 	/* char *school means that *school points to the character 'H'*/
-        char *school = "Holberton\n";
+	char *school = "Holberton\n";
 	int x;
 
 	/* school would return the address. */
