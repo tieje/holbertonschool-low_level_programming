@@ -13,7 +13,7 @@ int main(void)
 	/* school would return the address. */
 	for (x = 0; x < 10; x++)
 	{
-		_putchar(*(school + 1));
+		_putchar(*(school + x));
 	}
 	return (0);
 }
