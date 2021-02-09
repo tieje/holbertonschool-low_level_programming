@@ -1,15 +1,8 @@
-/**
- * main - betty don't kill me
- * Return: 0
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+#include "holberton.h"
 
 /**
- * print_alphabet - print alphabet lowercase
+ * print_alphabet - betty don't kill me
+ * Return: void
  */
 
 void print_alphabet(void)
