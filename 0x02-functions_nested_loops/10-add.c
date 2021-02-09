@@ -2,7 +2,8 @@
 
 /**
  * add - betty betty
- * int: some integer
+ * @a: some integer
+ * @b: second integer
  * Return: some integer
  */
 
