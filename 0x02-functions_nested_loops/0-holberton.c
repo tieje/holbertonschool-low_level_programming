@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 /**
  * main - Betty don't kill me
  * Return: 0
@@ -7,6 +5,14 @@
 
 int main(void)
 {
-	printf("Holberton\n");
+	/* char *school means that *school points to the character 'H'*/
+        char *school = "Holberton\n";
+	int x;
+
+	/* school would return the address. */
+	for (x = 0; x < 10; x++)
+	{
+		_putchar(*(school + 1));
+	}
 	return (0);
 }

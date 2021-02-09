@@ -5,9 +5,14 @@
  * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	int x;
+
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		_putchar(x);
+	}
+	_putchar(10);
 	return (0);
 }
-
