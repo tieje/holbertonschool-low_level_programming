@@ -14,7 +14,7 @@ void jack_bauer(void)
 	{
 		for (mm = 0; mm <= 59; mm++)
 		{
-			if (hh > 10)
+			if (hh > 9)
 			{
 				_putchar((hh / 10) + '0');
 				_putchar((hh % 10) + '0');
@@ -25,7 +25,7 @@ void jack_bauer(void)
 				_putchar(hh + '0');
 			}
 			_putchar(':');
-			if (mm > 10)
+			if (mm > 9)
 			{
 				_putchar((mm / 10) + '0');
 				_putchar((mm % 10) + '0');
