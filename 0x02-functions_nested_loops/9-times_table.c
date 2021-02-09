@@ -23,13 +23,16 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
 				_putchar(prod + '0');
 			}
 			if (y != 9)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if ((y+1) * x < 10 && y != 0)
+				{
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar(10);
