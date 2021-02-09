@@ -1,6 +1,6 @@
 /**
- * _isalpha(int c) - checks for alphabetic character
- * @variable: c
+ * _isalpha - checks for alphabetic character
+ * @c: alpha character
  * Return: some number
  */
 int _isalpha(int c)
