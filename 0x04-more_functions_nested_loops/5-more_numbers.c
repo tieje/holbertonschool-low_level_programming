@@ -5,14 +5,14 @@
  * Return: 0
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int x = 0;
-	int y = 0;
+	int x;
+	int y;
 
-	for ( ; y <= 10; y++)
+	for (y = 0 ; y <= 10; y++)
 	{
-		for ( ; x <= 14 ; x++)
+		for (x = 0 ; x <= 14 ; x++)
 		{
 			if (x > 9)
 			{
@@ -20,6 +20,6 @@ void print_most_numbers(void)
 			}
 			_putchar(x % 10 + '0');
 		}
+		_putchar(10);
 	}
-	_putchar(10);
 }
