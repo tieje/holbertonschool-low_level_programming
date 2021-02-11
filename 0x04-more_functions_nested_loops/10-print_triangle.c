@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - print this triangle boi
- * size: size of triangle
+ * @size: size of triangle
  * Return: none
  */
 
@@ -12,7 +12,7 @@ void print_triangle(int size)
 	int y;
 	int pound = 1;
 
-	if (size <= 0 )
+	if (size <= 0)
 	{
 		_putchar(10);
 	}
