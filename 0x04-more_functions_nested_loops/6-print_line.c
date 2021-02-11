@@ -2,13 +2,13 @@
 
 /**
  * print_line - we be printin
- * @n: number of time to print _
+ * @n: number of time to print
  * Return: void
  */
 
 void print_line(int n)
 {
-	if (n > 0)
+	if (n < 1)
 	{
 		_putchar(10);
 	}
@@ -16,9 +16,9 @@ void print_line(int n)
 	{
 		while (n > 0)
 		{
-			_putchar(95);
+			_putchar('_');
 			n--;
 		}
+		_putchar(10);
 	}
-	_putchar(10);
 }
