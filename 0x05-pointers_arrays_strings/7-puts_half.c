@@ -21,6 +21,10 @@ void puts_half(char *str)
 		{
 			_putchar(str[x]);
 		}
+		if (str_len == 0)
+		{
+			_putchar('\0');
+		}
 	}
 	else
 	{
