@@ -7,7 +7,7 @@
  * Return: dest
  */
 
-char *_strpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
         int src_len;
 	int x;
