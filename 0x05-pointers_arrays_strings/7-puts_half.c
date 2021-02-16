@@ -15,19 +15,22 @@ void puts_half(char *str)
 	{
 		continue;
 	}
-	if (str_len % 2 == 0)
+	/*
+	 *if (str_len % 2 == 0)
+	 *{
+	*/
+	for (x = str_len / 2; x < str_len; x++)
 	{
-		for (x = str_len / 2; x < str_len; x++)
-		{
-			_putchar(str[x]);
-		}
+		_putchar(str[x]);
 	}
-	else
-	{
-		for (x = (str_len - 1) / 2; x < str_len; x++)
-		{
-			_putchar(str[x]);
-		}
-	}
+	/*
+	 *else
+	*{
+	*	for (x = (str_len - 1) / 2; x < str_len; x++)
+	*	{
+	*		_putchar(str[x]);
+	*	}
+	*}
+*/
 	_putchar(10);
 }
