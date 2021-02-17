@@ -11,10 +11,18 @@ int _atoi(char *s)
 	int i = 0;
 	int neg_count = 0;
 	int intcopy = 0;
+	int slen;
 
+	for (slen = 0; s[slen] != 0; slen ++)
+	{
+		continue;
+	}
 	while (s[x] < '0' || s[x] > '9')
 	{
-		x++;
+		if (x < slen)
+		{
+			x++;
+		}
 	}
 	i = x;
 	while (s[x] >= '0' && s[x] <= '9')
