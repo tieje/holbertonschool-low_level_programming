@@ -13,16 +13,17 @@ int _atoi(char *s)
 	int intcopy = 0;
 	int slen;
 
-	for (slen = 0; s[slen] != 0; slen ++)
+	for (slen = 0; s[slen] != 0; slen++)
 	{
 		continue;
 	}
 	while (s[x] < '0' || s[x] > '9')
 	{
-		if (x < slen)
+		if (x >= slen - 1)
 		{
-			x++;
+			return (intcopy);
 		}
+		x++;
 	}
 	i = x;
 	while (s[x] >= '0' && s[x] <= '9')

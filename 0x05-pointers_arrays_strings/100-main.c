@@ -26,5 +26,9 @@ int main(void)
     printf("%d\n", n);
     n = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
     printf("%d\n", n);
+    n = _atoi("some string");
+    printf("%d\n", n);
+    n = _atoi("some other string");
+    printf("%d\n", n);
     return (0);
 }
