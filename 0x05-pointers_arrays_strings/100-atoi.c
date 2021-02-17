@@ -3,7 +3,7 @@
 /**
  * _atoi - convert string to numbers
  * @s: thing
- * Return int
+ * Return: int
  */
 int _atoi(char *s)
 {
