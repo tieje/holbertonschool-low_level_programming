@@ -1,10 +1,11 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * _atoi - convert string to numbers
  * @s: thing
  * Return: int
  */
+
 int _atoi(char *s)
 {
 	int x = 0;
