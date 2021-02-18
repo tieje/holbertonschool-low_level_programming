@@ -1,12 +1,5 @@
-int isletter(char t)
-{
-	if ((t >= 'A' && t <= 'Z') || (t >= 'a' && t <= 'z'))
-	{
-		return (0);
-	}
-	return (1);
-}
-
+#include "holberton.h"
+#include <stdio.h>
 /**
  * cap_string - capitalizes the first letter of each word
  * @s: string
@@ -16,14 +9,19 @@ int isletter(char t)
 char *cap_string(char *s)
 {
 	int x;
+	int y;
+	char sep[20] = {' ','\t','\n',',',';','.','!','?','\"','(',')','{','}'};
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		if (isletter(s[x]) == 1 && isletter(s[x + 1]) == 0)
+		for (y = 0; sep[y] != '\0'; y++)
 		{
-			if (s[x + 1] >= 'a' && s[x + 1] <= 'z')
+			if (s[x] == sep[y])
 			{
-				s[x + 1] = s[x + 1] - 32;
+				if (s[x + 1] >= 'a' && s[x + 1] <= 'z')
+				{
+					s[x + 1] = s[x + 1] - 32;
+				}
 			}
 		}
 	}
