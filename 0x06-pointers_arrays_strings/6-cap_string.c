@@ -17,6 +17,10 @@ char *cap_string(char *s)
 		{
 			if (s[x] == sep[y])
 			{
+				if (s[0] >= 'a' && s[0] <= 'z')
+				{
+					s[0] = s[0] - 32;
+				}
 				if (s[x + 1] >= 'a' && s[x + 1] <= 'z')
 				{
 					s[x + 1] = s[x + 1] - 32;
