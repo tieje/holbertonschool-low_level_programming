@@ -1,17 +1,20 @@
 /**
- * reverse_array - reverse dat array
- * @a: some int
- * @n: some int
+ * reverse_array - reverse dat array of integers
+ * @a: array
+ * @n: length of array
  */
 
 void reverse_array(int *a, int n)
 {
-	int alen;
-	int x = 0;
+	int end = n - 1;
+	int temp;
+	int x;
 
-	for(alen = n; alen <= 0; alen--)
+	for(x = 0; x < n / 2; x++)
 	{
-		a[x] = a[alen];
-		x++;
+		temp = a[x];
+		a[x] = a[end];
+		a[end] = temp;
+		end--;
 	}
 }
