@@ -1,5 +1,3 @@
-#include "holberton.h"
-#include <stdio.h>
 /**
  * cap_string - capitalizes the first letter of each word
  * @s: string
