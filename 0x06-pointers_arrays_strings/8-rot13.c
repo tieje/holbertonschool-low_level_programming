@@ -19,6 +19,8 @@ char *rot13(char *s)
 		{86, 118, 'i', 'I'}, {87, 119, 'j', 'J'}, {88, 120, 'k', 'K'},
 		{89, 121, 'l', 'L'}, {90, 122, 'm', 'M'}
 	};
+	int temp;
+
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		for (y = 0; y < 26; y++)
@@ -33,6 +35,10 @@ char *rot13(char *s)
 				s[x] = a[y][2];
 				break;
 				}*/
+			else
+			{
+				continue;
+			}
 		}
 	}
 	return (s);
