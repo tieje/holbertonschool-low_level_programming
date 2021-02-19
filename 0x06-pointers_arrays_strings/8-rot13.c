@@ -35,10 +35,6 @@ char *rot13(char *s)
 				s[x] = a[y][2];
 				break;
 				}*/
-			else
-			{
-				continue;
-			}
 		}
 	}
 	return (s);
