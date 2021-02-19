@@ -8,8 +8,7 @@ char *rot13(char *s)
 {
 	int x;
 	int y;
-	char alpha[90] = "NMOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ\
-nmopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
+	char alpha[90] = "NMOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZnmopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
