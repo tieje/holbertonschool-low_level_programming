@@ -25,20 +25,14 @@ char *rot13(char *s)
 		{
 			if (s[x] == a[y][0])
 			{
-				/*printf("s[x] was %c\n", s[x]);*/
-				/*printf("a[y][0] is %c\n", a[y][0]);*/
 				s[x] = a[y][3];
-				/*printf("s[x] is now %c\n", s[x]);*/
 				break;
-			}
+			}/*
 			else if (s[x] == a[y][1])
 			{
-				/*printf("s[x] was %c\n", s[x]);*/
-				/*printf("a[y][0] is %c\n", a[y][1]);*/
 				s[x] = a[y][2];
-				/*printf("s[x] is now %c\n", s[x]);*/
 				break;
-			}
+				}*/
 		}
 	}
 	return (s);
