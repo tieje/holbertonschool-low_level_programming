@@ -1,3 +1,4 @@
+#define NULL 0
 /**
  * _strstr - locates substring
  * @haystack: string
@@ -20,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 		if (haystack[x] == needle[0])
 		{
 			y = x;
-			while (s[y] == needle[d] && needle[d] != '\0')
+			while (haystack[y] == needle[d] && needle[d] != '\0')
 			{
 				y++;
 				d++;
