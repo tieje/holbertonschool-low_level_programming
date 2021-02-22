@@ -1,2 +1,5 @@
+!*.c
 *-main.c
 a.out
+*_putchar.c
+!*.md
