@@ -1,3 +1,4 @@
+#define NULL 0
 /**
  * _strchr - locates a character in a string
  * @s: string
@@ -13,7 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[x] == c)
 		{
-			return (s[x]);
+			return (&s[x]);
 		}
 	}
 	return (NULL);
