@@ -1,3 +1,4 @@
+#define NULL 0
 /**
  * _strspn - gets the lenght of a prefix substring
  * @s: string
@@ -16,7 +17,7 @@ unsigned int _strspn( char *s, char *accept)
 		{
 			if (s[y] == accept[x])
 			{
-				return (y);
+				return (y + 1);
 			}
 		}
 	}
