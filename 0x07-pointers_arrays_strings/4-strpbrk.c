@@ -1,6 +1,6 @@
 #define NULL 0
 /**
- * _strpbrk
+ * _strpbrk - finds some strings
  * @s: string
  * @accept: string to search
  * Return: pointer to the byte in s that matches one byte in accept
