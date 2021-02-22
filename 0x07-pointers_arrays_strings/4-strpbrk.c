@@ -1,3 +1,4 @@
+#define NULL 0
 /**
  * _strpbrk
  * @s: string
@@ -9,24 +10,14 @@ char *_strpbrk(char *s, char *accept)
 {
 	int x;
 	int y;
-	int d;
-	int m = 0;
-	char *b;
 
-	for (x = 0; accept[x]; x++)
+	for (x = 0; s[x]; x++)
 	{
-		for (y = 0; s[y]; y++)
+		for (y = 0; accept[y] != '\0'; y++)
 		{
-			if (accept[x] == s[y])
+			if (accept[y] == s[x])
 			{
-				d = y;
-				while (s[d] != '\0')
-				{
-					b[m] = s[d];
-					m++;
-					d++;
-				}
-				return (d);
+				return (&s[x]);
 			}
 		}
 	}
