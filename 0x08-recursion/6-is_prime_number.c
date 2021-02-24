@@ -1,6 +1,7 @@
 /**
  * primacy - checks for prime number
- * @n: integer
+ * @k: integer
+ * @i: comparative integer
  * Return: 1 or 0
  */
 int primacy(int k, int i)
@@ -13,11 +14,11 @@ int primacy(int k, int i)
 	{
 		return (0);
 	}
-	return primacy(k, i + 1);
+	return (primacy(k, i + 1));
 }
 
 /**
- * _prime_number - return 1 if input is a prime number
+ * is_prime_number - return 1 if input is a prime number
  * @n: integer input
  * Return: 1 or 0
  */
@@ -31,5 +32,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return primacy(n, 2);
+	return (primacy(n, 2));
 }
