@@ -1,3 +1,7 @@
 *
-!/*/*.c
-!.gitignore
+# Don't ignore directories so we can recurse into them
+!*/
+!*.c
+*main.c
+*_putchar.c
+!*.h
