@@ -1,6 +1,7 @@
 /**
- * sqrt - helper
+ * sqrthelper - helper
  * @k: integer
+ * @i: comparative integer
  * Return: square
  */
 
@@ -8,7 +9,7 @@ int sqrthelper(int k, int i)
 {
 	if (i == k / 2)
 	{
-		return(-1);
+		return (-1);
 	}
 	if (i * i == k)
 	{
