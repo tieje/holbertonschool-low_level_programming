@@ -1,4 +1,3 @@
-**
-!*.c
-#!*.md
-!*.gitignore
+*
+!/*/*.c
+!.gitignore
