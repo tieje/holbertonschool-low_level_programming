@@ -20,6 +20,7 @@ int wildhelper(char *w, char *x, int y, int z, int b1, int b2)
 		{
 			/* this is not the correct solution */
 			/* recurse for * to get correct solution*/
+			/* This means you'll need another helper function*/
 			return (wildhelper(w, x, y, z, b1 + 1, b2 + 1));
 		}
 		return (wildhelper(w, x, y, z, b1 + 1, b2));

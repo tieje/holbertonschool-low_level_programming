@@ -2,6 +2,10 @@
 # Don't ignore directories so we can recurse into them
 !*/
 !*.c
+*~*.c
 *main.c
 *_putchar.c
 !*.h
+!*.a
+!*.md
+0x09-static_libraries/*.c
