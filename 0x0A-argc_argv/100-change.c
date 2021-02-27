@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
 		y = y - ((y / 10) * 10);
 		x += y / 5;
 		y = y - ((y / 5) * 5);
+		x += y / 2;
+		y = y - ((y / 2) * 2);
 		x += y;
 		printf("%d\n", x);
 	}
