@@ -4,7 +4,7 @@
 * Return: integer
  */
 
-int isupper(char a)
+int _isupper(char a)
 {
 	if (a >= 'A' && a <= 'Z')
 	{
