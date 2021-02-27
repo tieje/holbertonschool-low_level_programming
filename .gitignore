@@ -8,4 +8,6 @@
 !*.h
 !*.a
 !*.md
-0x09-static_libraries/*.c
+# 0x09-static_libraries/*.c
+# temporary
+!0x09-static_libraries/
