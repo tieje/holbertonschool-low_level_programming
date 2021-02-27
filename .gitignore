@@ -4,10 +4,11 @@
 !*.c
 *~*.c
 *main.c
-*_putchar.c
+#temporary
+#*_putchar.c
 !*.h
 !*.a
 !*.md
 # 0x09-static_libraries/*.c
 # temporary
-!0x09-static_libraries/
+!0x09-static_libraries/*
