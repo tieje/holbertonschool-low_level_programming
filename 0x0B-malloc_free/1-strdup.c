@@ -6,8 +6,23 @@
  */
 char *_strdup(char *str)
 {
+	int slen;
+	int i;
+	char *a;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+	for (slen = 0; str[slen]; slen++)
+	{
+		continue;
+	}
+	a = malloc(slen * sizeof(char));
+	for (i = 0; i < slen; i++)
+	{
+		a[i] = str[i];
+	}
+	a[slen] = '\0';
+	return (a);
 }
