@@ -25,15 +25,11 @@ char *str_concat(char *s1, char *s2)
 		continue;
 	res = malloc((s1len + s2len) * sizeof(char) + 1);
 	if (res != NULL)
-		while (i <= s1len + s2len + 1)
+		while (i <= s1len + s2len)
 		{
 			if (i < s1len)
 				res[i] = s1[i];
-			else if (i == s1len)
-			{
-				res[i] = '\n';
-			}
-			else if (i > s1len)
+			else if (i >= s1len)
 			{
 				res[i] = s2[k];
 				k++;
@@ -62,6 +58,7 @@ char *argstostr(int ac, char **av)
 	for (x = 0; av[x]; x++)
 	{
 		res = str_concat(res, av[x]);
+		res = str_concat(res, "\n");
 	}
 	return (res);
 }
