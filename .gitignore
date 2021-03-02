@@ -12,4 +12,4 @@
 0x09-static_libraries/*.c
 !0x09-static_libraries/*.sh
 # temporary
-# !0x09-static_libraries/*
+#!0x09-static_libraries/*
