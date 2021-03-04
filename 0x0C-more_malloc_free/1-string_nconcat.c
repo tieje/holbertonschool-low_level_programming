@@ -22,22 +22,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		continue;
 	for (s2len = 0; s2[s2len]; s2len++)
 		continue;
-	if (n > s2len)
+	if (n >= s2len)
 		n = s2len;
 	res = malloc((s1len + n) * sizeof(char));
-	if (res != NULL)
-		while (i < s1len + n)
-		{
-			if (i < s1len)
-				res[i] = s1[i];
-			else if (i >= s1len)
-			{
-				res[i] = s2[k];
-				k++;
-			}
-			i++;
-		}
-		res[i] = '\0';
-		return (res);
-	return (NULL);
+	if (res == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < s1len; i++)
+	{
+		res[i] = s1[i];
+	}
+	for (; i < n + s1len; i++)
+	{
+		res[i] = s2[k];
+		k++;
+	}
+	return (res);
 }
