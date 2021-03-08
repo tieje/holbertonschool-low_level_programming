@@ -7,12 +7,12 @@
  * @age: dog age
  *@owner: dog owner
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
 int _putchar(char c);
 /* dog_t *new_dog(char *name, float age, char *owner); */
