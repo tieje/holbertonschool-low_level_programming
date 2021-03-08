@@ -1,7 +1,21 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "dog.h"
 #include "holberton.h"
+#include <stdlib.h>
+
+/**
+* len - strlen
+* @str: string
+* Return: length
+*/
+
+int len(char *str)
+{
+	int x = 0;
+
+	for (x = 0; *(str + x); x++)
+		;
+	return (x);
+}
 
 /**
 * _strcpy - copies src string to dest
@@ -13,46 +27,41 @@
 char *_strcpy(char *dest, char *src)
 {
 	int x = 0;
-	int src_len;
 
-	for (src_len = 0; src[src_len]; src_len++)
-	for (x = 0; x <= src_len; x++)
+	for (x = 0; x <= len(src); x++)
 		dest[x] = src[x];
 	return (dest);
 }
 
 /**
- * new_dog - creates a new dog
- * @name: dog name
- * @age: dog age
- * @owner: dog owner
- * Return: dog_t type return
- */
+* new_dog - add new dog
+* @name: name of dog
+* @age: age of dog
+* @owner: who cares for the dog
+* Return: hot new dog
+*/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *somedog;
-	char *copyname;
-	char *copyowner;
-	int name_len;
-	int owner_len;
+	dog_t *hotdog;
+	char *namecopy;
+	char *owncopy;
 
-	somedog = malloc(sizeof(dog_t));
-	if (somedog == NULL)
+	hotdog = malloc(sizeof(dog_t));
+
+	if (hotdog == NULL)
 		return (NULL);
-	somedog->age = age;
-	for (name_len = 0; name[name_len]; name_len++)
-	{ continue; }
-	for (owner_len = 0; owner[owner_len]; owner_len++)
-	{ continue; }
+
+	hotdog->age = age;
+
 	if (name)
 	{
-		copyname = malloc(name_len * sizeof(char));
-		somedog->name = _strcpy(copyname, name);
+		namecopy = malloc(len(name) + 1);
+		hotdog->name = _strcpy(namecopy, name);
 	}
 	if (owner)
 	{
-		copyowner = malloc(name_len * sizeof(char));
-		somedog->owner = _strcpy(copyowner, owner);
+		owncopy = malloc(len(owner) + 1);
+		hotdog->owner = _strcpy(owncopy, owner);
 	}
-	return (somedog);
+	return (hotdog);
 }
