@@ -8,10 +8,9 @@
 void print_dog(struct dog *d)
 {
 	char *x = "(nil)";
-	int y = 0;
 
 	if (d->name == NULL && d->owner == NULL && d->age == 0)
-		y = 1;
+		printf("\n");
 	else
 	{
 		if (d->name == NULL)
