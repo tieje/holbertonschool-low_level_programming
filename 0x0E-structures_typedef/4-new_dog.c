@@ -50,8 +50,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	if (hotdog == NULL)
 	{
-		free(hotdog->name);
-		free(hotdog->owner);
 		free(hotdog);
 		return (NULL);
 	}
@@ -60,11 +58,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name)
 	{
 		namecopy = malloc(len(name) + 1);
+		if (namecopy == NULL)
+		{
+			free(hotdog);
+			return (NULL);
+		}
 		hotdog->name = _strcpy(namecopy, name);
 	}
 	if (owner)
 	{
 		owncopy = malloc(len(owner) + 1);
+		if (owncopy == NULL)
+		{
+			free(namecopy);
+			free(hotdog);
+			return (NULL);
+		}
 		hotdog->owner = _strcpy(owncopy, owner);
 	}
 	return (hotdog);
