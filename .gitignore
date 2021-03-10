@@ -13,3 +13,4 @@
 !0x09-static_libraries/*.sh
 # temporary
 #!0x09-static_libraries/*
+!0x0F-function_pointers/3-main.c
