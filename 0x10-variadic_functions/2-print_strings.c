@@ -9,8 +9,23 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_start pa;
-	int i;
+	va_list pa;
+	unsigned int i;
+	int sep_flag = 0;
 
-	
+	if (!separator)
+	{
+		sep_flag = 1;
+	}
+	va_start(pa, n);
+	for (i = 0; i < n; i++)
+	{
+		printf("%s", va_arg(pa, char *));
+		if (sep_flag == 0 && i < n - 1)
+		{
+			printf("%s", separator);
+		}
+	}
+	va_end(pa);
+	printf("\n");
 }
