@@ -21,7 +21,7 @@ typedef struct list_s
 } list_t;
 
 /**
- * Node - it's a linked list
+ * struct Node - it's a linked list
  * @data: data that it's pointing to
  * @next: the next Node
  */
