@@ -15,18 +15,20 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
-/** Node - it's a linked list
+/**
+ * Node - it's a linked list
  * @data: data that it's pointing to
  * @next: the next Node
  */
-struct Node {
+struct Node
+{
 	int data;
-	struct Node* next;
+	struct Node *next;
 };
 
 int _putchar(char c);
