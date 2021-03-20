@@ -9,19 +9,22 @@ size_t print_list(const list_t *h)
 {
 	char *null_data = "[0] (nil)";
 	size_t counter = 0;
+	const list_t *pointer = h;
 
-	while (h != NULL)
+	if (!h)
+		return (0);
+	while (pointer)
 	{
-		if (h->str == NULL)
+		if (pointer->str == NULL)
 		{
 			printf("%s\n", null_data);
 		}
 		else
 		{
-			printf("[%d] %s\n", h->len, h->str);
+			printf("[%d] %s\n", pointer->len, pointer->str);
 		}
 		counter++;
-		h = h->next;
+		pointer = pointer->next;
 	}
 	return (counter);
 }
