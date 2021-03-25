@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * _pow - power
  * @a: integer to pow
