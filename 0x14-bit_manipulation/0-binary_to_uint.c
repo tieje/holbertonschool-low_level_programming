@@ -34,6 +34,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	unsigned int power;
 
+	if (b == NULL)
+		return (0);
 	for (b_len = 0; b[b_len]; b_len++)
 		continue;
 	power = b_len - 1;
