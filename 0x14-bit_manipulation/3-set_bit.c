@@ -3,7 +3,7 @@
  * set_bit - set bit
  * @n: number
  * @index: index
- * Return 1 if it worked or -1 if failed
+ * Return: 1 if it worked or -1 if failed
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
