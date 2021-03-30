@@ -17,13 +17,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (0);
-	buffer = malloc(sizeof(size_t) * letters);
+	buffer = malloc(letters);
 	if (buffer == NULL)
-		return(0);
+		return (0);
 	readreturn = read(fd, buffer, letters);
 	if (readreturn == -1)
 		return (0);
-	writereturn = write(2, buffer, readreturn);
+	writereturn = write(STDOUT_FILENO, buffer, readreturn);
 	if (writereturn == -1)
 		return (0);
 	close(fd);
