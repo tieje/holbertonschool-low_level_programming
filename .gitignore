@@ -3,6 +3,7 @@
 !*/
 !*.c
 !*.so
+!*.sh
 *~*.c
 *main.c
 #temporary
