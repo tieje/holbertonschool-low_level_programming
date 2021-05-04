@@ -2,6 +2,7 @@
 # Don't ignore directories so we can recurse into them
 !*/
 !*.c
+!*.so
 *~*.c
 *main.c
 #temporary
