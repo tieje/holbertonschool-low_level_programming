@@ -17,3 +17,6 @@
 #!0x09-static_libraries/*
 !0x0F-function_pointers/3-main.c
 **/0x1B.c
+/0x1C-makefiles/*
+!/0x1C-makefiles/*-Makefile
+!/0x1C-makefiles/5-island_perimeter.py
